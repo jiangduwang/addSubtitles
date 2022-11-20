@@ -1,0 +1,264 @@
+body{
+	/* background-color: floralwhite; */
+	position: fixed;
+	height: 100%;
+	width:	100%;
+	align-items: center;
+
+}
+
+.scroll::-webkit-scrollbar {
+	width: 7px;
+	height: 5px;
+}
+/* 滚动条按钮样式 */
+.scroll::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: #868686;
+}
+/* 滚动条背景条样式 */
+.scroll::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background: #b8b8b8;
+}
+
+#root
+{
+    width: 100%;
+    height: 100%;
+    background-image: url(/static/img/bgi01.jpg);
+    background-position: bottom center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#thewall{
+	display: flex;
+	flex-direction: column;
+	margin:auto auto;
+	/*border: solid #808080 2px;*/
+	width: 100%;
+	height: 100%;
+
+	position: relative;
+	overflow: auto;
+	top: 25px;
+	justify-content: flex-start;
+	align-items: center;
+
+}
+#row1{
+	width: 100%;
+	height: 15%;
+	line-height: 70px;
+	/* border:solid blue 1px; */
+	margin: 0px auto;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	flex-wrap: nowrap;
+
+}
+.row1s{
+	margin: 10px;
+}
+#logo{
+	width: 200px;
+	height: 165px;
+
+}
+#row1_col2{
+
+	font-size: 50px;
+	font-weight: 500;
+	text-shadow: #87CEEB;
+	display: inline-block;
+	margin: 0 auto;
+
+}
+#row1_col3{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width:fit-content;
+	height:fit-content;
+	padding:5px;
+	font-weight: 550;
+}
+
+#row2{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 95%;
+	height: fit-content;
+	min-height: 52%;
+	max-height: 52%;
+	/*border:solid blue 1px;*/
+	margin: 0px auto;
+	overflow: auto;
+	padding: 10px;
+
+}
+
+#row3{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 95%;
+	height: 150px;
+	/*border:solid blue 1px;*/
+	margin: 0px auto;
+	align:center;
+	margin-top: 200px;
+}
+
+#text_input{
+	/*display: inline-block;*/
+	width: 80%;
+	height: 256px;
+	/*left: 100px;*/
+	/*background-color: ;*/
+	overflow: auto;
+	font-size: 24px;
+	text-align: center;
+	font-weight: bold;
+
+    border-radius: 32px;
+    border: solid deepskyblue 4px;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.recordBlock{/*每一条留言 */
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(0, 191, 255, 0.6);
+	width: fit-content;
+	max-width: 1024px;
+	height: fit-content;
+	border: solid #ffffff 4px;
+	border-radius: 32px;
+	margin-bottom: 32px;
+}
+.liuyan{
+	background-color: navajowhite;
+	border: solid navajowhite 1px;
+	overflow: auto;
+	margin: 6px;
+}
+
+.uid
+{
+	margin: 10px 32px 0px 32px;
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.content
+{
+	margin: 0px 32px 10px 32px;
+	height: fit-content;
+	font-size: 24px;
+	overflow: auto;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+#btns
+{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin:5px;
+}
+
+
+/*
+#sendbutt{
+	background-image: url(../img/send.png);
+	background-repeat:no-repeat;
+	background-color: rgba(0, 0, 0, 0);
+    line-height: ;
+    border: solid #ffa000 6px;
+    color: #ffa000;
+	font-size: 18px;
+    border-radius: 16px;
+}
+#refreshbutt{
+	background-image: url(../img/refresh.png);
+	background-repeat:no-repeat;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid #ffa000 6px;
+	color: #ffa000;
+	font-size: 18px;
+    border-radius: 16px;
+}
+*/
+
+
+
+#row4
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+
+}
+
+.teamateHeadLogo
+{
+    width: 48px;
+    height: 48px;
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+	transition: all 1s;
+}
+.teamateHeadLogo:hover{
+	width: 86px;
+	height: 86px;
+	transform: rotate(1080deg);
+	/*transform: scale(1.2) rotate(1080deg) translateY(-150);*/
+}
+
+
+.t5
+{
+    background-image: url(/static/img/t05.jpg);
+}
+
+
+
+#label_team
+{
+    color:      #ffffff;
+    font-size:  24px;
+}
+
+#nc
+{
+	border: solid deepskyblue 2px;
+	border-radius: 16px;
+	background-color: rgba(255, 255, 255, 0.6);
+	height: 32px;
+}
+.file-wraps{
+    background: orange;
+    width: 100px;
+    height: 45px;
+    position: relative;
+    color: white;
+    text-align: center;
+    line-height: 45px;
+}
+.file-wraps input{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+}
